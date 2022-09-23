@@ -6,9 +6,7 @@ import 'ojs/ojbutton';
 import 'ojs/ojlabel';
 
 export default function ValidatorComponent (props: any) {
-  const [isPrivateEvent, setIsPrivateEvent] = useState(true);
   const [eventCode, setEventCode] = useState('');
-  const [rawPrivateEventCodeLength, setRawPrivateEventCodeLength] = useState(0);
 
   const eventCodeAsyncValidator = {
     validate: (value: string | number) => {
